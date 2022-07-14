@@ -10,13 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Noah8863/REACT-To-My-Portfolio.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Noah8863/REACT-To-My-Portfolio/issues"
   },
-  "homepage": "https://github.com/Noah8863/REACT-To-My-Portfolio#readme",
-  "dependencies": {
-    "react": "^18.2.0"
-  }
+  "homepage": "https://github.com/Noah8863/REACT-To-My-Portfolio#readme"
 }

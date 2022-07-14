@@ -1,18 +1,18 @@
 import React from 'react';
-import profilePicture from '../public/Profile-Picture.png'
+import profilePicture from '../images/Profile-Picture.png';
 
 
-function Header(props) {
+function Header() {
     return (
         <section className="landingPageSection">
             <div className="particles-js">
                 <div className="topnav">
-                    <div class="topnav-left">
-                        <a href="https://www.theverge.com/tech" target="_blank">News</a>
-                        <a href="#contact">Social Media</a>
+                    <div className="topnav-left">
+                        <a href="https://www.theverge.com/tech" target="_blank" rel="noreferrer">News</a>
+                        <a>Social Media</a>
                     </div>
                     <div className="topnav-right">
-                        <a href="#projects">Projects</a>
+                        <a>Projects</a>
                     </div>
                 </div>
                 <img src={profilePicture} id='avatarPicture' />
