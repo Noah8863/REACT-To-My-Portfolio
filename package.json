@@ -1,0 +1,22 @@
+{
+  "name": "react-to-my-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio that is built on React.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noah8863/REACT-To-My-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noah8863/REACT-To-My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Noah8863/REACT-To-My-Portfolio#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
