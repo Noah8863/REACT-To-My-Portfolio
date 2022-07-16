@@ -1,4 +1,8 @@
 import React from 'react';
+import project1 from '../images/JATE-Pic.jpg';
+import project2 from '../images/Coffee:Book-Pic.jpg';
+import project3 from '../images/Password_Gen_Pic.png'
+
 
 function projects() {
     return (
@@ -10,15 +14,15 @@ function projects() {
                 <div className="cards">
                     <label className="card" for="item-1" id="project-1">
                         <img
-                            src="./images/JATE-Pic.jpg"></img>
+                            src={project1}></img>
                     </label>
                     <label className="card" for="item-2" id="project-2">
                         <img
-                            src="./images/Coffee:Book-Pic.jpg"></img>
+                            src={project2}></img>
                     </label>
                     <label className="card" for="item-3" id="project-3">
                         <img
-                            src="./images/Password_Gen_Pic.png"></img>
+                            src={project3}></img>
                     </label>
                 </div>
                 <div className="infoContainer" id="infoContainer">
