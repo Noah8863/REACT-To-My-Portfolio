@@ -1,6 +1,6 @@
 import React from 'react';
 import profilePicture from '../images/Profile-Picture.png';
-
+import CardTemplate from './CardTemplate'
 
 function Header() {
     return (
@@ -16,8 +16,9 @@ function Header() {
                     </div>
                 </div>
                 <img src={profilePicture} id='avatarPicture' />
-                <h2> Noah Hoffman </h2>
+                <h2 id="name"> Noah Hoffman </h2>
             </div>
+            <CardTemplate />
         </section>
     )
 }
