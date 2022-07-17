@@ -3,8 +3,9 @@ import React from 'react';
 // import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 // import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 // import { BsGithub } from "react-icons/fa";
-import { fagithub } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { fagithub } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { fagithub } from '@fortawesome/free-solid-svg-icons'
 
 
 const links = [

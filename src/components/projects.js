@@ -4,6 +4,9 @@ import project1 from '../images/JATE-Pic.jpg';
 import project2 from '../images/Coffee:Book-Pic.jpg';
 import project3 from '../images/Password_Gen_Pic.png'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub} from '@fortawesome/free-brands-svg-icons'
+
 // const background = document.getElementById('projects')
 
 function projects() {
@@ -55,8 +58,7 @@ function projects() {
                                 <div className="sub-line">
                                     <div className="liveLink"><a href="https://fierce-castle-22192.herokuapp.com/"
                                         target="_blank" rel="noreferrer">Live Link Here</a></div>
-                                    <a className="githubIcon" href="https://github.com/Noah8863/PWA-Text-Editor" target="_blank" rel="noreferrer"><i
-                                        className="fa-brands fa-github"></i></a>
+                                    <a className="githubIcon" href="https://github.com/Noah8863/PWA-Text-Editor" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
                                 </div>
                             </label>
                             <label className="project-info" id="project-info-2">
@@ -65,7 +67,7 @@ function projects() {
                                     <div className="liveLink"><a href="https://noah8863.github.io/Coffee-and-Book-Finder/"
                                         target="_blank" rel="noreferrer">Live Link Here</a></div>
                                     <a className="githubIcon" href="https://github.com/Noah8863/Coffee-and-Book-Finder"
-                                        target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+                                        target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
                                 </div>
                             </label>
                             <label className="project-info" id="project-info-3">
@@ -74,7 +76,7 @@ function projects() {
                                     <div className="liveLink"><a href="https://noah8863.github.io/Password-Generator/"
                                         target="_blank" rel="noreferrer">Live Link Here</a></div>
                                     <a className="githubIcon" href="https://github.com/Noah8863/Password-Generator"
-                                        target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+                                        target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
                                 </div>
                             </label>
                         </div>

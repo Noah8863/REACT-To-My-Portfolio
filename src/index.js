@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'
 
+ReactDOM.render(<App />, document.getElementById('root'))
+
 // function highschool() {
 //     const highschool = document.getElementById('highschool')
 //     highschool.classList.toggle('hide')
@@ -59,4 +61,3 @@ import App from './App'
 //     background.classList.add('password-back-drop')
 // }
 
-ReactDOM.render(<App />, document.getElementById('root'))
