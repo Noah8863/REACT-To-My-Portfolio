@@ -2,27 +2,27 @@ html {
     font-family: sans-serif;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-  } 
-  html body {
+} 
+html body {
     max-width: 100%;
     overflow-x: hidden;
-  }
-  p {
+}
+p {
     font-size: larger;
-  }
-  body {
+}
+body {
     margin: 0;
     background-color: rgb(255, 255, 255);
     overflow:scroll;
-  }
-  section {
+}
+section {
     border-bottom: 1px solid rgb(0, 0, 0);
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
     text-align: center;
     position: relative;
-  }
+}
   img {
     width: 100%;
     height: 100%;
@@ -35,11 +35,11 @@ html {
   
   
   // ====== Profile & Banner Styles ======== //
-  #particles-js {
+  #particlesJs {
+    position: relative;
     width: 100vw;
     height: 40%;
-    background-color: #021928;
-    background-image: url("");
+    background-color: #306d96;
   }
   #avatarPicture {
     position: absolute;
@@ -69,7 +69,6 @@ html {
   }
   #name {
     position: relative;
-    top: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,19 +122,19 @@ html {
       margin: 5%;
       display: inline;
   }
-  #about-me-text-area {
+  #aboutmetextarea {
       position:relative;
       display: inline-block;
   }
-  .card-container {
+  .cardContainer {
     position: relative;
     width: auto;
     height: 60%;
-    margin-top: 0;
-    background-color: rgb(0, 0, 0);
+    margin-top: 20%;
+    background-color: rgb(230, 170, 170);
     // overflow: scroll;
   }
-  .flip-card-back a {
+  .flipCardBack a {
     text-decoration: none;
     color: white;
   }
@@ -148,7 +147,7 @@ html {
       height: 100%;
       float: left;
   }
-  .flip-card-inner {
+  .flipCardInner {
       position: relative;
       text-align: center;
       transition: transform 0.9s;
@@ -158,22 +157,22 @@ html {
       height: 200px;
      
   }
-  .tile:hover .flip-card-inner {
+  .tile:hover .flipCardInner {
       transform: rotateY(180deg);
   }
-  .flip-card-front, .flip-card-back {
+  .flipCardFront, .flipCardBack {
       position: absolute;
       width: 200px;
       height: 200px;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
   }
-  .flip-card-front {
+  .flipCardFront {
       color: black;
       background-color:rgb(92, 90, 90);
       margin-top: 10px;
   }
-  .flip-card-back {
+  .flipCardBack {
       background-color: #000000;
       color: white;
       transform: rotateY(180deg);
@@ -294,7 +293,7 @@ html {
       transform: translateX(-15px);
     }
   }
-  .fa-angles-right {
+  .faAnglesRight {
     position: relative;
     top: 10%;
     color: rgb(192, 190, 190);
@@ -305,13 +304,13 @@ html {
   
   // ====== Project Container Styles ======== //
   
-  .car-back-drop {
+  .carBackDrop {
     background-color:#30a9e0;
   }
-  .coffee-back-drop {
+  .coffeeBackDrop {
     background-color: #ba7b50;
   }
-  .password-back-drop{
+  .passwordBackDrop{
     background-color: #1e0f2d;
   }
   input[type=radio]{
@@ -354,21 +353,21 @@ html {
     margin-bottom: 20px;
   }
   
-  #item-1:checked ~ .cards #project-3, #item-2:checked ~ .cards #project-1, #item-3:checked ~ .cards #project-2 {
+  #item1:checked ~ .cards #project3, #item2:checked ~ .cards #project1, #item3:checked ~ .cards #project2 {
     transform: translatex(-50%) scale(.8);
     opacity: .4;
     z-index: 0;
     transition: .5s ease-in;
   }
    
-  #item-1:checked ~ .cards #project-2, #item-2:checked ~ .cards #project-3, #item-3:checked ~ .cards #project-1 {
+  #item1:checked ~ .cards #project2, #item2:checked ~ .cards #project3, #item3:checked ~ .cards #project1 {
     transform: translatex(50%) scale(.8);
     opacity: .4;
     z-index: 0;
     transition: .5s ease-in;
   }
   
-  #item-1:checked ~ .cards #project-1, #item-2:checked ~ .cards #project-2, #item-3:checked ~ .cards #project-3 {
+  #item1:checked ~ .cards #project1, #item2:checked ~ .cards #project2, #item3:checked ~ .cards #project3 {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
@@ -387,7 +386,7 @@ html {
     padding: 16px 10px;
   }
   
-  .upper-part {
+  .upperpart {
     position: relative;
     display: flex;
     align-items: center;
@@ -395,16 +394,16 @@ html {
     height: 36px;
     overflow: hidden;
   }
-  .project-info {
+  .projectinfo {
     width: calc(100% - 32px);
     display: block;
   }
-  .project-info .title {
+  .projectinfo .title {
     color: #403d40;
     font-size: 14px;
     line-height: 24px;
   }
-  .sub-line {
+  .subline {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -421,21 +420,21 @@ html {
       margin-left: auto;
       margin-bottom: 0px;
   }
-  .info-area {
+  .infoarea {
     width: 100%;
     position: absolute;
     top: 0;
     left: 30px;
     transition: transform .4s ease-in;
   }
-  #item-1:checked ~ .infoContainer #test {
+  #item1:checked ~ .infoContainer #test {
     transform: translateY(0);
   }
   
-  #item-2:checked ~ .infoContainer #test  {
+  #item2:checked ~ .infoContainer #test  {
     transform: translateY(-40px);
   }
-  #item-3:checked ~ .infoContainer #test  {
+  #item3:checked ~ .infoContainer #test  {
     transform: translateY(-80px);
   }
   

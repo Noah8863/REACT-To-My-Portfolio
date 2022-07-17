@@ -1,11 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-// import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-// import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-// import { BsGithub } from "react-icons/fa";
-// import { fagithub } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { fagithub } from '@fortawesome/free-solid-svg-icons'
+const element = <FontAwesomeIcon icon={ faGithub } />
 
 
 const links = [
@@ -13,7 +10,7 @@ const links = [
         name: 'Facebook',
         link: 'https://www.facebook.com/noah.stack.16/',
         id: 'facebook',
-        icon: 'fab fa-facebook-f'
+        icon: 'icon'
     },
     {
         name: 'Instagram',
@@ -31,7 +28,7 @@ const links = [
         name: 'GitHub',
         link: 'https://github.com/Noah8863',
         id: 'github',
-        icon: 'fab fa-github'
+        icon: element
     },
     {
         name: 'LinkedIn',

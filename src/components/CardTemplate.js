@@ -1,13 +1,16 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { fa-angles-right } from '@fortawesome/free-solids-svg-icons'
 
+// <FontAwesomeIcon icon="fa-solid fa-angles-right" />
 
 function Cards() {
     return (
         <div>
-            <div className="tile flip-card-inner" id="aboutMeCard">
-                <div className="flip-card">
-                    <div className="flip-card-inner">
-                        <div className="flip-card-front">
+            <div className="tile flipCardInner" id="aboutMeCard">
+                <div className="flipCard">
+                    <div className="flipCardInner">
+                        <div className="flipCardFront">
                             <div id="topExperinceCard">
                                 <h2>Education
                                     <i className="fa-solid fa-graduation-cap"></i>
@@ -16,7 +19,7 @@ function Cards() {
                             <div id="experinceTriangleShape"></div>
                             <i className="fa-solid fa-angles-right"></i>
                         </div>
-                        <div className="flip-card-back">
+                        <div className="flipCardBack">
                             <h2>Arvada High School
                                 <button onClick='highschool'><i className="fa-solid fa-caret-down"></i></button>
                             </h2>
@@ -47,10 +50,10 @@ function Cards() {
                     </div>
                 </div>
             </div>
-            <div className="tile flip-card-inner" id="experinceCard">
-                <div className="flip-card">
-                    <div className="flip-card-inner">
-                        <div className="flip-card-front">
+            <div className="tile flipCardInner" id="experinceCard">
+                <div className="flipCard">
+                    <div className="flipCardInner">
+                        <div className="flipCardFront">
                             <div id="topExperinceCard">
                                 <h2>Experince
                                     <i className="fa-solid fa-user-gear"></i>
@@ -60,7 +63,7 @@ function Cards() {
                             <i className="fa-solid fa-angles-right"></i>
                         </div>
 
-                        <div className="flip-card-back">
+                        <div className="flipCardBack">
                             <h2>Observ Inc
                                 <button onclick="observ()"><i className="fa-solid fa-caret-down"></i></button>
                             </h2>
