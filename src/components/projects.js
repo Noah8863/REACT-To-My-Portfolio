@@ -7,25 +7,26 @@ import project3 from '../images/Password_Gen_Pic.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub} from '@fortawesome/free-brands-svg-icons'
 
-// const background = document.getElementById('projects')
+const background = document.getElementById('projects')
 
 function projects() {
 
-    // const parking = () => {
-    //     background.classList.remove('coffee-back-drop')
-    //     background.classList.remove('password-back-drop')
-    //     background.classList.add('car-back-drop')
-    // }
-    // const coffee = () => {
-    //     background.classList.remove('car-back-drop')
-    //     background.classList.remove('password-back-drop')
-    //     background.classList.add('coffee-back-drop')
-    // }
-    // const password = () => {
-    //     background.classList.remove('car-back-drop')
-    //     background.classList.remove('coffee-back-drop')
-    //     background.classList.add('password-back-drop')
-    // }
+    const parking = () => {
+        background.classList.remove('coffeebackdrop')
+        background.classList.remove('passwordbackdrop')
+        background.classList.add('carbackdrop')
+    }
+    const coffee = () => {
+        background.classList.remove('carbackdrop')
+        background.classList.remove('passwordbackdrop')
+        background.classList.add('coffeebackdrop')
+    }
+    const password = () => {
+        background.classList.remove('car-back-drop')
+        background.classList.remove('coffee-back-drop')
+        background.classList.add('password-back-drop')
+    }
+
 
     //Need to figure how to change the background onClick for each project
     //Change onclick to onClick and make it an object
@@ -33,9 +34,9 @@ function projects() {
     return (
         <section className="projectSection carBackDrop" id="projects">
             <div className="container">
-                <input type="radio" name="slider" id="item1" onclick='parking' checked></input>
-                <input type="radio" name="slider" id="item2" onclick='coffee' checked ></input>
-                <input type="radio" name="slider" id="item3" onclick='password' checked></input>
+                <input type="radio" name="slider" id="item1" onClick='parking' checked></input>
+                <input type="radio" name="slider" id="item2" onClick='coffee' checked ></input>
+                <input type="radio" name="slider" id="item3" onClick='password' checked></input>
                 <div className="cards">
                     <label className="card" for="item1" id="project1">
                         <img

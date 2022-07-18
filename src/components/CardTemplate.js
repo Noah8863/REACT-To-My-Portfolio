@@ -1,17 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fa-angles-right } from '@fortawesome/free-solids-svg-icons'
-
-// <FontAwesomeIcon icon="fa-solid fa-angles-right" />
-
+// import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const handleToggle = (e) => {
-    e.target.classList.toggle('hide');
-}
-
-function showInfo() {
-    const highschoolInfo = document.getElementById('highschool')
-    highschoolInfo.classList.toggle('hide')
+    e.target.parentNode.nextElementSibling.classList.toggle('hide');
 }
 
 function Cards() {
@@ -31,7 +22,7 @@ function Cards() {
                         </div>
                         <div className="flipCardBack">
                             <h2>Arvada High School
-                                <button onClick={showInfo}>Click Me</button>
+                                <button onClick={handleToggle}></button>
                             </h2>
                             <p className="hide" id="highschool">
                                 2014 - 2018
