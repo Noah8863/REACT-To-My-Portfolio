@@ -1,6 +1,7 @@
 import React from 'react';
 import profilePicture from '../images/Profile-Picture.png';
 import Cards from './CardTemplate'
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Header() {
     return (
@@ -8,11 +9,11 @@ function Header() {
             <div className="particlesJs">
                 <div className="topnav">
                     <div className="topnav-left">
-                        <a href="https://www.theverge.com/tech" target="_blank" rel="noreferrer">News</a>
+                        <a href="https://www.theverge.com/tech" target="_blank" rel="noreferrer" alt="https://www.theverge.com/tech">News</a>
                         <a>Social Media</a>
                     </div>
                     <div className="topnav-right">
-                        <a>Projects</a>
+                        {/* <Link to="#projects" rel="noreferrer" >Projects</Link> */}
                     </div>
                 </div>
                 <img src={profilePicture} id='avatarPicture' />

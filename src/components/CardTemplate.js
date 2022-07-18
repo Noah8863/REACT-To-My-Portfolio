@@ -4,6 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // <FontAwesomeIcon icon="fa-solid fa-angles-right" />
 
+
+const handleToggle = (e) => {
+    e.target.classList.toggle('hide');
+}
+
+function showInfo() {
+    const highschoolInfo = document.getElementById('highschool')
+    highschoolInfo.classList.toggle('hide')
+}
+
 function Cards() {
     return (
         <div>
@@ -21,7 +31,7 @@ function Cards() {
                         </div>
                         <div className="flipCardBack">
                             <h2>Arvada High School
-                                <button onClick='highschool'><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={showInfo}>Click Me</button>
                             </h2>
                             <p className="hide" id="highschool">
                                 2014 - 2018
@@ -30,7 +40,7 @@ function Cards() {
                             </p>
 
                             <h2>University Of California Davis
-                                <button onClick="college()"><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><i className="fa-solid fa-caret-down"></i></button>
                             </h2>
                             <p className="hide" id="college">
                                 2018 - 2019
@@ -39,7 +49,7 @@ function Cards() {
                             </p>
 
                             <h2>Denver University Bootcamp
-                                <button onClick="bootcamp()"><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><i className="fa-solid fa-caret-down"></i></button>
                             </h2>
                             <p className="hide" id="bootcamp">
                                 Feb. 2022 - Aug. 2022

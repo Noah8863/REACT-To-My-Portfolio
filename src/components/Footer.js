@@ -10,7 +10,7 @@ const links = [
         name: 'Facebook',
         link: 'https://www.facebook.com/noah.stack.16/',
         id: 'facebook',
-        icon: 'icon'
+        icon: 'fab fa-facebook'
     },
     {
         name: 'Instagram',
@@ -28,7 +28,7 @@ const links = [
         name: 'GitHub',
         link: 'https://github.com/Noah8863',
         id: 'github',
-        icon: element
+        icon: 'fab fa-github'
     },
     {
         name: 'LinkedIn',
