@@ -3,6 +3,7 @@ import Header from './components/header'
 import Projects from './components/projects'
 import NavBar from './components/NavBar'
 import Contact from './components/contact'
+import './App.scss';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./App.scss";
