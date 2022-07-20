@@ -1,29 +1,21 @@
 import React from 'react';
 import profilePicture from '../images/Profile-Picture.png';
 import Cards from './CardTemplate'
-import { HashLink as Link } from 'react-router-hash-link';
+import NavBar from './NavBar'
+
 
 function Header() {
     return (
         <section className="landingPageSection">
-            <div className="particlesJs">
-                <div className="topnav">
-                    <div className="topnav-left">
-                        <a href="https://www.theverge.com/tech" target="_blank" rel="noreferrer" alt="https://www.theverge.com/tech">News</a>
-                        <a>Social Media</a>
-                    </div>
-                    <div className="topnav-right">
-                        {/* <Link to="#projects" rel="noreferrer" >Projects</Link> */}
-                    </div>
-                </div>
-                <img src={profilePicture} id='avatarPicture' />
-                <div id='name'>
-                    <h2> Noah Hoffman </h2>
-                </div>
+            <NavBar />
+            <img src={profilePicture} id='avatarPicture' />
+            <div id='name'>
+                <h2> Noah Hoffman </h2>
             </div>
+
             <div className="cardContainer">
                 <div id='aboutmetextarea'>
-                <h1 style={{color:"black"}}>About Me:</h1>
+                    <h1 style={{ color: "black" }}>About Me:</h1>
                     <div className="description">
                         <p>
                             My name is Noah Hoffman and I currently live in Denver, Colorado. I've lived in Denver
