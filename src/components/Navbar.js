@@ -8,7 +8,7 @@ export default function NavBar() {
                 <a>Social Media</a>
             </div>
             <div className="topnav-right">
-                {/* <Link to="#projects" rel="noreferrer" >Projects</Link> */}
+                <a href="http://localhost:3000/contact">Contact</a>
             </div>
         </header>
     )
