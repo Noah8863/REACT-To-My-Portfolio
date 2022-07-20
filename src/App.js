@@ -1,15 +1,22 @@
 import Footer from './components/Footer'
 import Header from './components/header'
 import Projects from './components/projects'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./App.scss";
 
-function App(){
+function App() {
     return (
-        <main>
-            <Header />
-            <Projects />
-            <Footer />
-        </main>
+        <Router>
+            <main>
+                <Switch>
+                    <Route path="/">
+                        <Header />
+                        <Projects />
+                        <Footer />
+                    </Route>
+                </Switch>
+            </main>
+        </Router>
     )
 }
 
