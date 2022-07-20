@@ -1,5 +1,6 @@
 import React from 'react';
-// import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 const handleToggle = (e) => {
     e.target.parentNode.nextElementSibling.classList.toggle('hide');
@@ -15,14 +16,15 @@ function Cards() {
                             <div id="topExperinceCard">
                                 <h2>Education
                                     <i className="fa-solid fa-graduation-cap"></i>
+                                    
                                 </h2>
                             </div>
                             <div id="experinceTriangleShape"></div>
-                            <i className="fa-solid fa-angles-right"></i>
+                            <KeyboardDoubleArrowRightIcon className='faAnglesRight'/>
                         </div>
                         <div className="flipCardBack">
                             <h2>Arvada High School
-                                <button onClick={handleToggle}></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown" /></button>
                             </h2>
                             <p className="hide" id="highschool">
                                 2014 - 2018
@@ -31,7 +33,7 @@ function Cards() {
                             </p>
 
                             <h2>University Of California Davis
-                                <button onClick={handleToggle}><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon /> </button>
                             </h2>
                             <p className="hide" id="college">
                                 2018 - 2019
@@ -40,7 +42,7 @@ function Cards() {
                             </p>
 
                             <h2>Denver University Bootcamp
-                                <button onClick={handleToggle}><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
                             </h2>
                             <p className="hide" id="bootcamp">
                                 Feb. 2022 - Aug. 2022
@@ -61,12 +63,12 @@ function Cards() {
                                 </h2>
                             </div>
                             <div id="experinceTriangleShape"></div>
-                            <i className="fa-solid fa-angles-right"></i>
+                            <KeyboardDoubleArrowRightIcon className='faAnglesRight'/>
                         </div>
 
                         <div className="flipCardBack">
                             <h2>Observ Inc
-                                <button onclick="observ()"><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
                             </h2>
                             <p className="hide" id="observinfo">
                                 Funnel Cake Concessions Worker
@@ -75,7 +77,7 @@ function Cards() {
                             </p>
 
                             <h2>Best Buy
-                                <button onclick="bestbuy()"><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
                             </h2>
                             <p className="hide" id="bestbuyinfo">
                                 Verizon Sales Specialists
@@ -84,7 +86,7 @@ function Cards() {
                             </p>
 
                             <h2>Verizon
-                                <button onclick="verizon()"><i className="fa-solid fa-caret-down"></i></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
                             </h2>
                             <p class="hide" id="verizoninfo">
                                 Verizon Sales Assoiciate

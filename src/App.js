@@ -10,17 +10,20 @@ import "./App.scss";
 function App() {
     return (
         <Router>
-            <NavBar />
+            
             
                 {/* Added a swtich component so the DOM makes sure that it only loads ONE page */}
                 <Switch>
                     <Route exact path="/">
+                        <NavBar />
                         <Header />
                         <Projects />
                         <Footer />
                     </Route>
                     <Route path="/contact">
+                        <NavBar />
                         <Contact />
+                        
                     </Route>
                 </Switch>
             

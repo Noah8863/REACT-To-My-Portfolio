@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function contact (){
     return (
+        <main className="contactPage">
         <form>
             <label>
                 Name: 
@@ -16,5 +17,6 @@ export default function contact (){
                 <input type="text" name="message" />
             </label>
         </form>
+        </main>
     )
 }

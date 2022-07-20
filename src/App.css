@@ -3,6 +3,7 @@ html {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 html body {
@@ -44,8 +45,8 @@ img {
 #particlesJs {
   position: relative;
   width: 100vw;
-  height: 40%;
-  background-color: #ffffff;
+  height: 30%;
+  background-color: #021928;
 }
 
 #avatarPicture {
@@ -93,16 +94,9 @@ img {
           align-items: center;
 }
 
-#tip {
-  font-size: small;
-  position: relative;
-  float: left;
-  top: 60%;
-}
-
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #000000;
   text-decoration: none;
   font-size: 17px;
   margin-left: 20px;
@@ -149,9 +143,14 @@ img {
 .cardContainer {
   position: relative;
   width: auto;
-  height: 60%;
-  margin-top: 20%;
+  margin-top: -1%;
   background-color: black;
+  overflow: scroll;
+}
+
+.ArrowDown {
+  width: 10px;
+  height: 10px;
 }
 
 .flipCardBack a {
@@ -658,6 +657,23 @@ input[type=radio] {
 .wrapper .resume:hover .tooltip::before {
   background: #7d7e7e;
   color: #ffffff;
+}
+
+.contactPage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 400px;
+  color: white;
+  background-color: #021928;
 }
 
 @media screen and (max-width: 640px) {

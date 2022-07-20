@@ -1,144 +1,142 @@
 html {
-    font-family: sans-serif;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  font-family: sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-color:black;
 } 
 html body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 p {
-    font-size: larger;
+  font-size: larger;
 }
 body {
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    overflow:scroll;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  overflow:scroll;
 }
 section {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: start;
-    text-align: center;
-    position: relative;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
 }
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  .hide {
-    display: none;
-  }
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.hide {
+  display: none;
+}
   
   
   // ====== Profile & Banner Styles ======== //
-  #particlesJs {
-    position: relative;
-    width: 100vw;
-    height: 40%;
-    background-color: #ffffff;
-  }
-  #avatarPicture {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    border-radius: 50%;
-  }
-  .landingPage {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    position: relative;
-    color: white;
-    flex-direction: row;
-  }
-  .landingPageSection{
-    position: relative;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    margin: 0;
-    height: 100vh;
-  }
-  #name {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #tip {
-    font-size: small;
-    position: relative;
-    float: left;
-    top: 60%;
-  }
+#particlesJs {
+  position: relative;
+  width: 100vw;
+  height: 30%;
+  background-color: #021928;
+}
+#avatarPicture {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+   border-radius: 50%;
+}
+.landingPage {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  position: relative;
+  color: white;
+  flex-direction: row;
+}
+.landingPageSection{
+  position: relative;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  height: 100vh;
+}
+#name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
-  // ====== Navigation Styles ======== //
+// ====== Navigation Styles ======== //
   
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 17px;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  .topnav a:hover {
-    color: rgb(158, 157, 157);
-  } 
-  .topnav a.active {
-    background-color: #ffffff;
-    color: white;
-  }
-  .topnav-right {
-    float: right;
-    margin-right: 20px;
-  }
+.topnav a {
+  float: left;
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.topnav a:hover {
+  color: rgb(158, 157, 157);
+} 
+.topnav a.active {
+  background-color: #ffffff;
+  color: white;
+}
+.topnav-right {
+  float: right;
+  margin-right: 20px;
+}
   
   
   // ====== Flip Card Styles ======== //
   
   
-  #aboutMeCard {
-      float: right;
-      position: relative;
-      width: 200px;
-      height: 200px;
-      margin: 5%;
-      display: inline;   
-  }
-  #experinceCard {
-      float: right;
-      position: relative;
-      width: 200px;
-      height: 200px;
-      margin: 5%;
-      display: inline;
-  }
-  #aboutmetextarea {
-      position:relative;
-      display: inline-block;
-  }
-  .cardContainer {
-    position: relative;
-    width: auto;
-    height: 60%;
-    margin-top: 20%;
-    background-color: rgb(0, 0, 0);
-    // overflow: scroll;
-  }
-  .flipCardBack a {
-    text-decoration: none;
-    color: white;
-  }
-  .description{
+#aboutMeCard {
+  float: right;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5%;
+  display: inline;   
+}
+#experinceCard {
+  float: right;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5%;
+  display: inline;}
+#aboutmetextarea {
+  position:relative;
+  display: inline-block;
+}
+.cardContainer {
+  position: relative;
+  width: auto;
+  margin-top: -1%;
+  background-color: rgb(0, 0, 0);
+  overflow: scroll;
+}
+.ArrowDown {
+  width: 10px;
+  height: 10px;
+}
+.flipCardBack a {
+  text-decoration: none;
+  color: white;
+}
+.description{
       color: white;
       background-color: rgb(0, 0, 0);
       position: relative;
@@ -299,8 +297,7 @@ section {
     color: rgb(192, 190, 190);
     font-size: x-large;
     animation: bounceRight 3s infinite;
-    
-  }
+}
   
   // ====== Project Container Styles ======== //
   
@@ -543,9 +540,21 @@ section {
     background: #7d7e7e;
     color: #ffffff;
   }
+
+// ====== Contact Page Styles ======== //
   
+.contactPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 400px;
+  color: white;
+  background-color: #021928;
+}
   
-  // ====== Fully Responsive Styles ======== //
+// ====== Fully Responsive Styles ======== //
   
   
   @media screen and (max-width: 640px) {
