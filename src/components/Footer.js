@@ -49,7 +49,7 @@ const links = [
     },
     {
         name: 'Resume',
-        link: '../resume/resume.pdf',
+        link: './resume/resume.pdf',
         id: 'resume',
         icon: function () {
             return <PersonIcon />
