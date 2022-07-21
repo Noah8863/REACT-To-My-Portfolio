@@ -4,7 +4,7 @@ import profilePicture from '../images/Profile-Picture.png';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-
+    // Sending form to email 
     const form = useRef()
 
     const sendEmail = (e) => {
@@ -33,8 +33,8 @@ export default function Contact() {
                         </div>
                         <div className="colmd6 colsm12">
                             <div className="styledInput wide">
-                                <input type="text" required />
-                                <label type="email" name="email">Email</label>
+                                <input type="text" name="email" required />
+                                <label type="email">Email</label>
                             </div>
                         </div>
                         <div className="colmd6 colsm12">
@@ -45,7 +45,7 @@ export default function Contact() {
                         </div>
                         <div className="colxs12">
                             <div className="styledInput wide">
-                                <textarea required name="message"></textarea>
+                                <textarea required name="message" type="text"></textarea>
                                 <label>Message</label>
                             </div>
                         </div>
