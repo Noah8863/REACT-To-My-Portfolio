@@ -12,7 +12,7 @@ export default function contact() {
     return (
         <div className="landingPageSection">
             <NavBar />
-            <img src={profilePicture} id='avatarPicture' />
+            <img src={profilePicture} id='avatarPicture' alt="avatar" />
             <main className="contactPage">
                 <form onSubmit={handleSubmit}>
                     <div className="row inputContainer">

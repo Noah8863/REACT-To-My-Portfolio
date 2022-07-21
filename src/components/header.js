@@ -9,7 +9,7 @@ function Header() {
     return (
         <section className="landingPageSection">
             <NavBar />
-            <img src={profilePicture} id='avatarPicture' />
+            <img src={profilePicture} id='avatarPicture' alt="avatar"/>
             <div id='name'>
                 <h2> Noah Hoffman </h2>
             </div>
