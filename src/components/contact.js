@@ -1,45 +1,51 @@
 import React from 'react';
+import NavBar from './NavBar'
+import profilePicture from '../images/Profile-Picture.png';
 
 export default function contact() {
 
     const handleSubmit = event => {
         event.preventDefault();
-        alert('You have submitted the form.')
+        alert("Form successfully submitted!")
     }
 
     return (
-        <main className="contactPage" id='particlesJs'>
-            <form onSubmit={handleSubmit}>
-                <div className="row inputContainer">
-                    <div className="colxs12">
-                        <div className="styledInput wide">
-                            <input type="text" required />
-                            <label>Name</label>
+        <div className="landingPageSection">
+            <NavBar />
+            <img src={profilePicture} id='avatarPicture' />
+            <main className="contactPage">
+                <form onSubmit={handleSubmit}>
+                    <div className="row inputContainer">
+                        <div className="colxs12">
+                            <div className="styledInput wide">
+                                <input type="text" required />
+                                <label>Name</label>
+                            </div>
+                        </div>
+                        <div className="colmd6 colsm12">
+                            <div className="styledInput wide">
+                                <input type="text" required />
+                                <label>Email</label>
+                            </div>
+                        </div>
+                        <div className="colmd6 colsm12">
+                            <div className="styledInput wide">
+                                <input type="text" required />
+                                <label>Phone Number</label>
+                            </div>
+                        </div>
+                        <div className="colxs12">
+                            <div className="styledInput wide">
+                                <textarea required></textarea>
+                                <label>Message</label>
+                            </div>
+                        </div>
+                        <div className="colxs12">
+                            <button className="btnlrg submitbtn">Send Message</button>
                         </div>
                     </div>
-                    <div className="colmd6 colsm12">
-                        <div className="styledInput wide">
-                            <input type="text" required />
-                            <label>Email</label>
-                        </div>
-                    </div>
-                    <div className="colmd6 colsm12">
-                        <div className="styledInput wide">
-                            <input type="text" required />
-                            <label>Phone Number</label>
-                        </div>
-                    </div>
-                    <div className="colxs12">
-                        <div className="styledInput wide">
-                            <textarea required></textarea>
-                            <label>Message</label>
-                        </div>
-                    </div>
-                    <div className="colxs12">
-                        <button className="btnlrg submitbtn">Send Message</button>
-                    </div>
-                </div>
-            </form>
-        </main>
+                </form>
+            </main>
+        </div>
     )
 }

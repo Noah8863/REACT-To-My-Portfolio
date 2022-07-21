@@ -3,7 +3,11 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 const handleToggle = (e) => {
-    e.target.parentNode.nextElementSibling.classList.toggle('hide');
+    if (e.target.className.contains('ArrowDown')){
+        e.target.parentNode.parentNode.nextElementSibling.classList.remove('hide');
+    } else {
+        e.target.parentNode.nextElementSibling.classList.remove('hide');
+    }
 }
 
 function Cards() {
@@ -33,7 +37,7 @@ function Cards() {
                             </p>
 
                             <h2>University Of California Davis
-                                <button onClick={handleToggle}><ArrowDownwardIcon /> </button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon  className="ArrowDown"/> </button>
                             </h2>
                             <p className="hide" id="college">
                                 2018 - 2019
@@ -42,7 +46,7 @@ function Cards() {
                             </p>
 
                             <h2>Denver University Bootcamp
-                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown" /></button>
                             </h2>
                             <p className="hide" id="bootcamp">
                                 Feb. 2022 - Aug. 2022
@@ -68,7 +72,7 @@ function Cards() {
 
                         <div className="flipCardBack">
                             <h2>Observ Inc
-                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown"/></button>
                             </h2>
                             <p className="hide" id="observinfo">
                                 Funnel Cake Concessions Worker
@@ -77,7 +81,7 @@ function Cards() {
                             </p>
 
                             <h2>Best Buy
-                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown" /></button>
                             </h2>
                             <p className="hide" id="bestbuyinfo">
                                 Verizon Sales Specialists
@@ -86,9 +90,9 @@ function Cards() {
                             </p>
 
                             <h2>Verizon
-                                <button onClick={handleToggle}><ArrowDownwardIcon /></button>
+                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown"/></button>
                             </h2>
-                            <p class="hide" id="verizoninfo">
+                            <p className="hide" id="verizoninfo">
                                 Verizon Sales Assoiciate
                                 Jan. 2022 - April. 2022
                                 8461 S Yosemite St Ste 101, Lone Tree, CO 80124

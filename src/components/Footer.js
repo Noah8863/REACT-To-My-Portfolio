@@ -66,7 +66,7 @@ export default function Footer() {
                 {/* Mapping over all the different icons/links and creating an anchor tag and inserting the different object values */}
                 <ul className="wrapper">
                     {links.map((link) => (
-                        <a href={link.link} target="_blank" rel="noreferrer" style={{color:"white"}}>
+                        <a key={link.id} href={link.link} target="_blank" rel="noreferrer" style={{color:"white"}}>
                             <li className={`icon ${link.id}`}>
                                 <span className="tooltip">
                                     {link.name}
