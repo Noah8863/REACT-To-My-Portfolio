@@ -4,6 +4,7 @@ import Cards from './CardTemplate'
 import NavBar from './NavBar'
 
 
+
 function Header() {
     return (
         <section className="landingPageSection">

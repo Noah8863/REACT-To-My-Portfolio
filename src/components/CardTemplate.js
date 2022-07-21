@@ -3,10 +3,12 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 const handleToggle = (e) => {
-    if (e.target.className.contains('ArrowDown')){
-        e.target.parentNode.parentNode.nextElementSibling.classList.remove('hide');
+    console.log(e.target)
+    
+    if (e.target.classList.contains('ArrowDown')){
+        e.target.parentNode.parentNode.nextElementSibling.classList.toggle('hide');
     } else {
-        e.target.parentNode.nextElementSibling.classList.remove('hide');
+        e.target.parentNode.parentNode.parentNode.nextElementSibling.classList.toggle('hide');
     }
 }
 
@@ -28,7 +30,7 @@ function Cards() {
                         </div>
                         <div className="flipCardBack">
                             <h2>Arvada High School
-                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown" /></button>
+                                <button><ArrowDownwardIcon onClick={handleToggle} className="ArrowDown" /></button>
                             </h2>
                             <p className="hide" id="highschool">
                                 2014 - 2018
@@ -37,7 +39,7 @@ function Cards() {
                             </p>
 
                             <h2>University Of California Davis
-                                <button onClick={handleToggle}><ArrowDownwardIcon  className="ArrowDown"/> </button>
+                                <button ><ArrowDownwardIcon onClick={handleToggle} className="ArrowDown"/> </button>
                             </h2>
                             <p className="hide" id="college">
                                 2018 - 2019
@@ -46,7 +48,7 @@ function Cards() {
                             </p>
 
                             <h2>Denver University Bootcamp
-                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown" /></button>
+                                <button ><ArrowDownwardIcon onClick={handleToggle} className="ArrowDown" /></button>
                             </h2>
                             <p className="hide" id="bootcamp">
                                 Feb. 2022 - Aug. 2022
@@ -72,7 +74,7 @@ function Cards() {
 
                         <div className="flipCardBack">
                             <h2>Observ Inc
-                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown"/></button>
+                                <button ><ArrowDownwardIcon onClick={handleToggle} className="ArrowDown"/></button>
                             </h2>
                             <p className="hide" id="observinfo">
                                 Funnel Cake Concessions Worker
@@ -81,7 +83,7 @@ function Cards() {
                             </p>
 
                             <h2>Best Buy
-                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown" /></button>
+                                <button ><ArrowDownwardIcon onClick={handleToggle} className="ArrowDown" /></button>
                             </h2>
                             <p className="hide" id="bestbuyinfo">
                                 Verizon Sales Specialists
@@ -90,7 +92,7 @@ function Cards() {
                             </p>
 
                             <h2>Verizon
-                                <button onClick={handleToggle}><ArrowDownwardIcon className="ArrowDown"/></button>
+                                <button ><ArrowDownwardIcon onClick={handleToggle} className="ArrowDown"/></button>
                             </h2>
                             <p className="hide" id="verizoninfo">
                                 Verizon Sales Assoiciate

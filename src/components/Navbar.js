@@ -5,7 +5,6 @@ import { HashLink } from 'react-router-hash-link'
 export default function NavBar() {
 
     const handleClick = () => {
-        // scroll-snap-align: start;
         const sections = document.querySelectorAll("section")
         sections.forEach((section) => {
             section.style.scrollSnapAlign = 'none';
