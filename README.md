@@ -41,6 +41,12 @@
   Follow the link that is listed below and have a look around! Message me through the contact form if you have any questions. 
   
   Live Link: https://endearing-cobbler-8b1a90.netlify.app/
+  
+  <img width="1440" alt="DF201ADA-A618-42E9-81BD-04D8AF2924EC" src="https://user-images.githubusercontent.com/60634270/180300573-5297c81f-864f-4704-9f01-8acc6eeee686.png">
+
+  <img width="1440" alt="A587C61F-9086-4563-84EB-88B42AAF98E6" src="https://user-images.githubusercontent.com/60634270/180300606-9d3061e4-6f7d-40b6-8886-aa9f0012b1d6.png">
+
+
 
   ## Contributing to this project
   Fork the repo and submit a merge request. Requests will be approved upon review. 
