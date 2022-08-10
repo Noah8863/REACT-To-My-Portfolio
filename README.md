@@ -69,6 +69,6 @@
  
   Github Profile: [Noah8863](https://github.com/Noah8863)  
 
-  Email: stacknoah99@gmail.com 
-
-  LinkedIn: Noah Hoffman
+  Email: stacknoah99@gmail.com
+  
+  LinkedIn: [Noah Hoffman](https://www.linkedin.com/in/noah-hoffman-9975a7121/)
